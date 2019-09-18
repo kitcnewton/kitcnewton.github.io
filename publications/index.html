@@ -44,23 +44,23 @@ Here is a list of my publications:
 		<div id="sketching" class="collapse">
 		
 		For an overdetermined system \( \mathsf A\mathsf x \approx \mathsf b \) with \( \mathsf A \)
-  and \( \mathsf b \) given, the least-square (LS) formulation $\min_x \,
-  \|\Amat\xmat-\bmat\|_2$ is often used to find an acceptable solution
-  $\xmat$. The cost of solving this problem depends on the dimensions
-  of $\Amat$, which are large in many practical instances. This cost
+  and \( \mathsf b \) given, the least-square (LS) formulation \( \min_x \,
+  \|\mathsf A\mathsf x-\mathsf b\|_2 \) is often used to find an acceptable solution
+  \( \mathsf x \). The cost of solving this problem depends on the dimensions
+  of \( \mathsf A \), which are large in many practical instances. This cost
   can be reduced by the use of random sketching, in which we choose a
-  matrix $\Smat$ with many fewer rows than $\Amat$ and $\bmat$, and
-  solve the sketched LS problem $\min_x \, \|\Smat(\Amat
-  \xmat-\bmat)\|_2$ to obtain an approximate solution to the original
+  matrix \( \mathsf S \) with many fewer rows than \( \mathsf A \) and \(\mathsf b \), and
+  solve the sketched LS problem  \( \min_x \, \|\mathsf S(\mathsf A
+  \mathsf x-\mathsf b)\|_2 \) to obtain an approximate solution to the original
   LS problem. Significant theoretical and practical progress has been
   made in the last decade in designing the appropriate structure and
-  distribution for the sketching matrix $\Smat$. When $\Amat$ and
-  $\bmat$ arise from discretizations of a PDE-based inverse problem,
-  tensor structure is often present in $\Amat$ and $\bmat$.  For
-  reasons of practical efficiency, $\Smat$ should be designed to have
-  a structure consistent with that of $\Amat$. Can we claim similar
+  distribution for the sketching matrix \( \mathsf S \). When \( \mathsf A \) and
+  \(\mathsf b \) arise from discretizations of a PDE-based inverse problem,
+  tensor structure is often present in \( \mathsf A \) and \(\mathsf b \)  For
+  reasons of practical efficiency, \( \mathsf S \) should be designed to have
+  a structure consistent with that of \( \mathsf A \). Can we claim similar
   approximation properties for the solution of the sketched LS problem
-  with structured $\Smat$ as for fully-random $\Smat$?  We give
+  with structured \( \mathsf S \) as for fully-random \( \mathsf S \)?  We give
   estimates that relate the quality of the solution of the sketched LS
   problem to the size of the structured sketching matrices, for two
   different structures. Our results are among the first known for
